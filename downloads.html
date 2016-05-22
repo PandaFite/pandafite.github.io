@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="js/https.js"></script>
+<head> <!-- Last updated 05/19/2016 at 4:15 PM PDT -->
+<script src="js/https.js?420"></script>
 <title>Downloads - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -9,46 +9,16 @@
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?1">
-<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=1_10_16">
+<link rel="stylesheet" href="css/custom-styles.css?2">
+<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
 <script src="js/twitchTitle.js"></script>
-<script type="text/javascript">
-
-$(document).ready(function () {
-
-    $("#btn-blog-next").click(function () {
-      $('#blogCarousel').carousel('next')
-    });
-     $("#btn-blog-prev").click(function () {
-      $('#blogCarousel').carousel('prev')
-    });
-
-     $("#btn-client-next").click(function () {
-      $('#clientCarousel').carousel('next')
-    });
-     $("#btn-client-prev").click(function () {
-      $('#clientCarousel').carousel('prev')
-    });
-    
-});
-
- $(window).load(function(){
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });  
-});
-
-</script>
+<script src='js/nprogress.js'></script>
+<link rel='stylesheet' href='css/nprogress.css'/>
 <style>
 * {
 	margin: 0;
@@ -72,7 +42,11 @@ html, body {
 
 </head>
 
-<body>
+<body class="home">
+	<script>
+	NProgress.start();
+	NProgress.done();
+	</script>
 	<div class="wrapper123">
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
@@ -90,23 +64,23 @@ html, body {
                 <div class="mobile-nav-select">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Menu...</option>
-                    <option value="http://pandaplayshd.com">Home</option>
-                    <option value="schedule">Schedule</option>
+                    <option value="https://pandaplayshd.com">Home</option>
                     <option value="about">About</option>
-                    <option value="social">Social</option>
-                    <option value="rules">Rules</option>
-                    <option value="specs">PC Specs</option>
 					<option value="bamboo">Bamboo</option>
-					<option value="software">Software</option>
-					<option value="https://unban.pandaplayshd.com">Chat Unban</option>
 					<option value="business">Business</option>
+					<option value="unban">Chat Unban</option>
 					<option value="downloads">Downloads</option>
+					<option value="specs">PC Specs</option>
+					<option value="rules">Rules</option>
+                    <option value="schedule">Schedule</option>
+					<option value="social">Social</option>
+					<option value="software">Software</option>
                 </select>
                 </div>
                 </form>
 		
 		<div id="menu-logo" class="span5 logo hidden-phone">
-        	<img class="hidden-phone nodrag" src="https://pandaplayshd.com/img/logo.png?v=12_27_2015" width="49" height="64" alt="" />
+        	<img class="hidden-phone nodrag" src="img/logo-j_skulloz.png" width="49" height="64" alt="Logo" title="Logo by @J_Skulloz">
             <h3>PandaPlaysHD</h3>
         </div>
 		<div id="menu-logo" class="span5 logo visible-phone" style="text-align: center">
@@ -114,25 +88,20 @@ html, body {
         </div>
             <div id="menu-content" class="navbar hidden-phone hidden-tablet" style="display: inline-block; float: right;">
             
-			<ul class="nav">
-           <li><a href="http://pandaplayshd.com">Home</a></li>
-           <li><a href="schedule">Schedule</a></li>
-           <li><a href="about">About</a></li>
-		   <li><a href="social">Social</a></li>
-		   <li><a href="rules">Rules</a></li>
-		   <li><a href="specs">PC Specs</a></li>
+		<ul class="nav">
+           <li><a href="https://pandaplayshd.com">Home</a></li>
+		   <li><a href="about">About</a></li>
 		   <li><a href="bamboo">Bamboo</a></li>
-		   <li><a href="software">Software</a></li>
-		   <li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
 		   <li><a href="business">Business</a></li>
+		   <li><a href="unban">Chat Unban</a></li>
 		   <li class="active"><a href="#">Downloads</a></li>
-            </ul>
-           
+		   <li><a href="specs">PC Specs</a></li>
+		   <li><a href="rules">Rules</a></li>
+           <li><a href="schedule">Schedule</a></li>
+		   <li><a href="social">Social</a></li>
+		   <li><a href="software">Software</a></li>
+		</ul>         
             </div>
-
-
-            
-
         </div>
         
       </div><!-- End Header -->
@@ -142,9 +111,15 @@ html, body {
 	
     <!-- Title Header -->
     <div class="row">
-            <h2 style="text-align: center;">Downloads</h2>
+            <h2 style="text-align: center;" class="hidden-phone">Downloads</h2>
+			<div style="text-align: center;" class="hidden-tablet">
+			<span style="text-align: center; padding-top: 10px;" class="fontcenterl hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+			</div>
 			
-			<h4 style="text-align: center; padding-top: 10px;">Looking for the programs Panda uses to stream? Try the <a href="http://pandaplayshd.com/software">Software</a> page.</h4>
+			<div style="text-align: center;" class="hidden-desktop">
+			<span style="text-align: center; padding-top: 10px;" class="fontcenter hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+			</div>
+			
 			<!-- DESKTOP VERSION -->
 			<style>
 			#expand-box {padding-bottom: 30px}
@@ -154,6 +129,24 @@ html, body {
 			<p class="fontcenterl">Texture Packs</p>
 			</div>
 			<div class="line-divider"></div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl">Purple Pack:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/h9fy5xa51976yc3/Purple+Pack+-EXTRACT-.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl">Cholos Blue & White Mash-Up Pack:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/pdt3drjok8brhp9/%21%C2%A7b%C2%A7lCho%C2%A7f%C2%A7llo%27s+%21%C2%A7b%C2%A7lBlue+%C2%A7f%C2%A7l%26+White.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl">Huahwi Infinite 16x Edit:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/ygzcb7fmih7c9dk/Huahwis+InFinite+16x+Edit+%28EXTRACT+ALL+FILES%2C+MAIN+RESOURCE+PACK+INSIDE%29+%283%29%282%29.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
 			<div id="expand-box">
 			<div id="expand-box-header">
 			<span class="fontleftl">Dfield 200k Pack:</span> 
@@ -224,16 +217,10 @@ html, body {
 			<div class="line-divider"></div>
 			<div id="expand-box">
 			<div id="expand-box-header">
-			<span class="fontleftl">Minecraft Male Skin:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/pbhtv04vv3vthtq/PandaPlaysMCHD_Boy%20~%20Skin.png?dl=1" target="_blank">Download</a></span>
+			<span class="fontleftl">PandaPlaysHD Minecraft Skin:</span> 
+			<span class="fontrightl"><a href="https://pandaplayshd.com/dl/minecraft-skin.png" target="_blank" download>Download</a></span>
 			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Minecraft Female Skin:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/lbmb55kdbqxzrdd/PandaPlaysMCHD_Girl%20~%20Skin.png?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>		
+			</div>	
 		</div>
 		
 		<!-- TABLET VERSION -->
@@ -248,6 +235,24 @@ html, body {
 			<div class="line-divider-tablet"></div>
 			<div id="expand-box">
 			<div id="expand-box-header">
+			<span class="fontleftl">Purple Pack:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/h9fy5xa51976yc3/Purple+Pack+-EXTRACT-.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl">Cholos Blue & White Mash-Up Pack:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/pdt3drjok8brhp9/%21%C2%A7b%C2%A7lCho%C2%A7f%C2%A7llo%27s+%21%C2%A7b%C2%A7lBlue+%C2%A7f%C2%A7l%26+White.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl">Huahwi Infinite 16x Edit:</span> 
+			<span class="fontrightl"><a href="http://www.mediafire.com/download/ygzcb7fmih7c9dk/Huahwis+InFinite+16x+Edit+%28EXTRACT+ALL+FILES%2C+MAIN+RESOURCE+PACK+INSIDE%29+%283%29%282%29.zip" target="_blank">Download</a></span>
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
 			<span class="fontleftl">Dfield 200k Pack:</span> 
 			<span class="fontrightl"><a href="http://www.mediafire.com/download/wuccbblc6e3as44/%C2%A75%C2%A7lDfieldPack+200k.zip" target="_blank">Download</a></span>
 			</div>
@@ -316,14 +321,8 @@ html, body {
 			<div class="line-divider-tablet"></div>
 			<div id="expand-box">
 			<div id="expand-box-header">
-			<span class="fontleftl">Minecraft Male Skin:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/pbhtv04vv3vthtq/PandaPlaysMCHD_Boy%20~%20Skin.png?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Minecraft Female Skin:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/lbmb55kdbqxzrdd/PandaPlaysMCHD_Girl%20~%20Skin.png?dl=1" target="_blank">Download</a></span>
+			<span class="fontleftl">PandaPlaysHD Minecraft Skin:</span> 
+			<span class="fontrightl"><a href="https://pandaplayshd.com/dl/minecraft-skin.png" target="_blank" download>Download</a></span>
 			</div>
 			</div>		
 		</div>
@@ -334,7 +333,9 @@ html, body {
 			#expand-box {padding-bottom: 30px}
 			</style>
 			<div class="visible-phone hidden-tablet" style="text-align: center;width: 200px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<h4>Unfortunately, this page is not available on mobile devices.</h4>
+			<div style="text-align: center;">
+				<span class="fontcenterl">Unfortunately, this page is not available on mobile devices.<br /><br /><a href="javascript:history.back()"><- Go Back</a><br /><a href="https://pandaplayshd.com"><- Go Home</a></span>
+			</div>
 		</div>
 		
 		
@@ -378,7 +379,7 @@ html, body {
 	
 
     <!-- Scroll to Top -->  
-    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+
 	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
 	<div class="color-bar-2 color-bg"></div>
 	<div class="color-bar-1"></div>
